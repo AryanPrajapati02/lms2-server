@@ -20,7 +20,9 @@ const serviceRouter = require('./routes/service-router')
 const adminRouter = require('./routes/admin-route')
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-
+app.get('/' ,(req ,res)=>{
+    res.send('pong')
+})
 app.use('/api/auth' , router)
 app.use('/api', contactRoter)
 app.use('/api', serviceRouter )
