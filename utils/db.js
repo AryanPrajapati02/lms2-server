@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-
+const url = process.env.DB_URI
 
 
 const connectDB= async() =>{
     try{
-      await mongoose.connect('mongodb://127.0.0.1:27017/thapalms')
+      await mongoose.connect(url)
       console.log("DB connected successfully")
     }catch(err){
     console.log('databse coonection failed')
