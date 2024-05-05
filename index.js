@@ -2,7 +2,7 @@ const express = require('express')
 const app =express()
 const cors =require('cors')
 const corsOption ={
-    origin: 'http://localhost:5173',
+    origin: 'https://lms2-client.vercel.app',
     method:"GET ,POST , PUT , DELETE ,PATCH ,HEAD",
     credentials: true,
     optionSuccessStatus: 200
